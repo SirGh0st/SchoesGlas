@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen bei Sch&ouml;nesGlas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .footer-content {
+            background-color: #9b8787;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hidden-container {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hidden-container.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .logo-container {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            align-items: center;
+            text-align: center;
+        }
+
+        .underline-animation {
+            position: relative;
+        }
+
+        .underline-animation::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #6a72ea;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .underline-animation:hover::after {
+            transform: scaleX(1);
+        }
+
+        .testimonial-carousel {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .testimonial-item {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            width: 80%;
+            text-align: center;
+        }
+
+        .testimonial-item.active {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #fff; border: 1px solid #63636380;">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produkte.html">Produkte</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="dienstleistungen.html">Dienstleistungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wir.html">&Uuml;ber uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <button id="loginButton" class="btn btn-outline-primary" type="button"
+                    onclick="scrollPage()">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center logo-container" style="opacity: 0; margin-bottom: 30px; margin-top: 35px;">
+        <img src="Logo.png" alt="Sch&ouml;nesGlas Logo" height="250" width="420">
+    </div>
+
+    <div class="hidden-container mt-5">
+        <div class="container">
+            <h1 class="underline-animation mb-4">Willkommen bei Sch&ouml;nesGlas!</h1>
+            <p class="mb-4">Sch&ouml;nesGlas ist Ihre erstklassige Anlaufstelle f&uuml;r hochwertige Brillen und erstklassige
+                optische Dienstleistungen. Unser engagiertes Team erfahrener Optiker steht Ihnen jederzeit zur Verf&uuml;gung, f&uuml;r Sie die perfekte L&ouml;sung zu finden.</p>
+            <p>Wir bei Sch&ouml;nesGlas glauben daran, dass eine gute Sehqualit&auml;t nicht auf Kosten des Stils gehen
+                sollte. Deshalb bieten wir nicht nur eine umfangreiche Auswahl an Brillenfassungen, sondern auch modische
+                Accessoires, um Ihren pers&ouml;nlichen Stil zu unterstreichen.</p>
+            <p>Unsere Leidenschaft f&uuml;r exzellenten Kundenservice und h&ouml;chste Zufriedenheit spiegelt sich in allem
+                wider, was wir tun. Von umfassenden Augenuntersuchungen bis hin zu ma&szlig;geschneiderten
+                Brillenanpassungen - wir sind hier, um sicherzustellen, dass Ihre Augen und Ihr Stil perfekt
+                zusammenpassen.</p>
+            <p>Bei Sch&ouml;nesGlas stehen Sie im Mittelpunkt unserer Bem&uuml;hungen. Besuchen Sie uns und entdecken Sie, wie
+                wir Ihr Seherlebnis verbessern k&ouml;nnen.</p>
+        </div>
+
+
+<div class="container text-center mb-5 mt-5">
+    <a href="kontakt.html" class="btn btn-primary btn-lg me-lg-3" style="background-color: #6a72ea; border: none;">Termin vereinbaren</a>
+</div>
+
+
+        <div id="employeeLoginForm" class="container mt-5" style="display: none;">
+            <div class="border rounded p-4">
+                <h2 class="mb-4">Konto Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="inputEmail">E-Mail:</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-3" style="background-color: #6a72ea; border: none;">Anmelden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function animateElementsWithDelay() {
+            var elements = document.querySelectorAll('.hidden-container');
+            elements.forEach(function (element) {
+                element.classList.add('animated');
+            });
+            setTimeout(function () {
+                var logoContainer = document.querySelector('.logo-container');
+                logoContainer.style.opacity = '1';
+            }, 0); 
+
+            setTimeout(function () {
+                document.querySelector('h1').classList.add('underline-animation');
+            }, 200);
+
+        }
+        setTimeout(function () {
+            animateElementsWithDelay();
+        }, 500);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function scrollPage() {
+            document.getElementById("employeeLoginForm").style.display = "block";
+            var scrollLength = 1500;
+            window.scrollBy({
+                top: scrollLength,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <script>
+       const username = "admin@glas.de";
+
+
+
+$("#loginForm").submit(function (event) {
+    event.preventDefault();
+    const inputUsername = $("#inputEmail").val();
+    if (inputUsername === username) {
+        sessionStorage.setItem("isLoggedIn", true);
+        window.location.href = "admin.html";
+    } else {
+        const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputUsername);
+        if (isValidEmail) {
+            alert("Sie wurden erfolgreich eingeloggt.");
+        } else {
+            alert("Falsche E-Mail oder Passwort. Bitte versuchen Sie es erneut.");
+        }
+    }
+});
+
+    </script>
+
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-auto">
+        <div class="text-center p-3">
+            &copy; 2024 Sch&ouml;nesGlas - Webseite gestaltet und aufgebaut mit Hilfe des Bootstrap Frameworks
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
