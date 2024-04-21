@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen bei Sch&ouml;nesGlas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hidden-container {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            align-items: center;
+            text-align: center; 
+        }
+
+        .hidden-container.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .logo-container {
+             opacity: 0;
+             transition: opacity 0.5s ease; 
+             align-items: center;
+            text-align: center; 
+        }
+
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .footer-content {
+            background-color: #9b8787;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .underline-animation {
+            position: relative;
+        }
+
+        .underline-animation::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #6a72ea;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .underline-animation:hover::after {
+            transform: scaleX(1);
+        }
+
+        .testimonial-carousel {
+        position: relative;
+        overflow: hidden;
+        height: 300px; 
+    }
+
+    .testimonial-item {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        width: 80%;
+        text-align: center;
+    }
+
+    .testimonial-item.active {
+        opacity: 1;
+    }
+
+    </style>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light"
+   style="background-color: #fff; border: 1px solid #63636380;">
+   <div class="container">
+       <a class="navbar-brand" href="#"></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+           <ul class="navbar-nav">
+               <li class="nav-item"><a class="nav-link" href="Main.html">Startseite</a></li>
+               <li class="nav-item"><a class="nav-link" href="produkte.html">Produkte</a></li>
+
+               <li class="nav-item"><a class="nav-link" href="dienstleistungen.html">Dienstleistungen</a></li>
+               <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+               <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+               <li class="nav-item"><a class="nav-link" href="überUns.html">&Uuml;ber uns</a></li>
+               <li class="nav-item"><a class="nav-link" href="Info.html">Info</a></li>
+           </ul>
+       </div>
+   </div>
+</nav>
+
+    
+<div class="text-center logo-container" style="opacity: 0; margin-bottom: 30px; margin-top: 35px;">
+    <img src="Logo.png" alt="Sch&ouml;nesGlas Logo" height="250" width="420">
+</div>
+    
+    
+    <div class="hidden-container mt-5">
+        <div class="container">
+            <h2>&Uuml;ber Unsere Technologie</h2>
+            <p>Unsere Webseite wurde mit einer modernen Webentwicklungstechnologie entwickelt, die verschiedene Technologien integriert, darunter:</p>
+            <p><strong>Bootstrap:</strong> Ein beliebtes Framework f&uuml;r das Frontend-Webdesign, das die Erstellung responsiver und ansprechender Webseiten erleichtert.</p>
+            <p><strong>JavaScript (JS):</strong> Eine leistungsf&auml;hige Programmiersprache, die f&uuml;r die Interaktivit&auml;t und Dynamik unserer Webseite sorgt. JavaScript wird verwendet, um Benutzeraktionen zu verarbeiten, Inhalte dynamisch zu aktualisieren und vieles mehr.</p>
+            <p><strong>CSS (Cascading Style Sheets):</strong> Eine Stylesheet-Sprache, die das Aussehen und Layout unserer Webseite steuert. CSS erm&ouml;glicht es uns, das visuelle Erscheinungsbild unserer Webseite anzupassen und zu gestalten.</p>
+            <p><strong>HTML (Hypertext Markup Language):</strong> Die Grundstruktur unserer Webseite, die zur Organisation und Strukturierung des Inhalts verwendet wird. HTML definiert die verschiedenen Elemente und ihre Beziehungen zueinander.</p>
+            <p>Durch die Nutzung dieser Technologien konnten wir eine benutzerfreundliche, ansprechende und professionelle Webseite erstellen, die unseren Besuchern ein angenehmes Surferlebnis bietet.</p>
+        </div>
+    
+        <div class="container">
+            <h3>Quellenverzeichnis</h3>
+            <p><a href="https://getbootstrap.com/">Bootstrap Dokumentation</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript Dokumentation auf MDN Web Docs</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Dokumentation auf MDN Web Docs</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Dokumentation auf MDN Web Docs</a></p>
+        </div>
+    </div>
+    
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <script>
+        function animateElementsWithDelay() {
+            var elements = document.querySelectorAll('.hidden-container');
+            elements.forEach(function (element) {
+                element.classList.add('animated');
+            });
+
+            const logoContainer = document.querySelector('.logo-container');
+    
+    logoContainer.style.animationDelay = '3s';
+    logoContainer.style.opacity = '1';
+    logoContainer.style.marginBottom = '30px';
+    logoContainer.style.marginTop = '35px';
+
+
+        
+        }
+
+        setTimeout(function() {
+            animateElementsWithDelay();
+        }, 500); 
+    </script>
+
+    
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-auto">
+        <div class="text-center p-3">
+            &copy; 2024 Sch&ouml;nesGlas - Webseite gestaltet und aufgebaut mit Hilfe des Bootstrap Frameworks
+        </div>
+    </footer>
+
+</body>
+
+</html>

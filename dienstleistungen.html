@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Dienstleistungen - Sch&ouml;nesGlas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center; 
+        }
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .footer-content {
+            background-color: #9b8787;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service, h1 {
+            opacity: 0; 
+            animation: fadeIn 1s ease-in forwards; 
+        }
+
+        .logo-container {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .service {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            outline: 2px solid transparent; 
+            transition: background-color 0.3s ease, outline 0.3s ease; 
+        }
+
+        .service:hover {
+            background-color: #555;
+            outline-color: #fff; 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light"
+     style="background-color: #fff; border: 1px solid #63636380;">
+     <div class="container">
+         <a class="navbar-brand" href="#"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+             <ul class="navbar-nav">
+                 <li class="nav-item"><a class="nav-link" href="Main.html">Startseite</a></li>
+                 <li class="nav-item"><a class="nav-link" href="produkte.html">Produkte</a></li>
+
+                 <li class="nav-item"><a class="nav-link" href="dienstleistungen.html">Dienstleistungen</a></li>
+                 <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                 <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+                 <li class="nav-item"><a class="nav-link" href="überUns.html">&Uuml;ber uns</a></li>
+                 <li class="nav-item"><a class="nav-link" href="Info.html">Info</a></li>
+             </ul>
+         </div>
+     </div>
+ </nav>
+
+ <div class="text-center logo-container" style="opacity: 0; margin-bottom: 30px; margin-top: 35px;">
+    <img src="Logo.png" alt="Sch&ouml;nesGlas Logo" height="250" width="420">
+</div>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 mt-5">Unsere Dienstleistungen</h1>
+        <div class="row">
+            <div class="col-md-12"> 
+                <div class="service">
+                    <h3>Stilvolle Brillenberatung</h3>
+                    <p>Unsere qualifizierten Mitarbeiter helfen Ihnen, die perfekte Brille zu finden, die nicht nur Ihre Sehbed&uuml;rfnisse erf&uuml;llt, sondern auch Ihre Pers&ouml;nlichkeit unterstreicht. Wir verwenden modernste Technologien wie einen digitalen 3D-Brillenberater, um Ihnen eine Auswahl an hochwertigen Brillenfassungen zu pr&auml;sentieren.</p>
+                </div>
+                <div class="service">
+                    <h3>Augenuntersuchung mit Fundusfotografie</h3>
+                    <p>Unsere umfassende Augenuntersuchung umfasst eine detaillierte Bewertung der Augengesundheit mit Hilfe von Fundusfotografie. Dabei wird ein Bild des Augenhintergrunds erstellt, um Ver&auml;nderungen der Netzhaut, wie sie bei Krankheiten wie Diabetes und Glaukom auftreten k&ouml;nnen, fr&uuml;hzeitig zu erkennen. Wir verwenden hochmoderne Funduskameras und diagnostische Software, um genaue und zuverl&auml;ssige Ergebnisse zu gew&auml;hrleisten.</p>
+                </div>
+                <div class="service">
+                    <h3>Professioneller Sehtest</h3>
+                    <p>Unser professioneller Sehtest verwendet hochpr&auml;zise refraktive Messger&auml;te wie einen Autorefraktometer und einen Phoropter, um Ihre Sehst&auml;rke genau zu bestimmen und die richtige Brillenst&auml;rke f&uuml;r Sie zu ermitteln.</p>
+                </div>
+                <div class="service">
+                    <h3>Pr&auml;zise Brillenanpassung</h3>
+                    <p>Unsere erfahrenen Optiker passen Ihre Brille mit Hilfe von pr&auml;zisen Messungen und modernen Anpassungstechniken wie der Fitting-Box an, um sicherzustellen, dass sie perfekt sitzt und optimal ausgerichtet ist.</p>
+                </div>
+                <div class="service">
+                    <h3>Individuelle Kontaktlinsenanpassung</h3>
+                    <p>Unsere Kontaktlinsenspezialisten verwenden topographische Messger&auml;te und digitale Keratometer, um Kontaktlinsen individuell an Ihre Augen anzupassen und eine optimale Passform sowie Sehqualit&auml;t zu gew&auml;hrleisten.</p>
+                </div>
+                <div class="service">
+                    <h3>Notfallversorgung</h3>
+                    <p>Unser Team bietet schnelle und professionelle Versorgung bei akuten Augenproblemen und -verletzungen an, darunter Fremdk&ouml;rperentfernung, Behandlung von Augeninfektionen und Soforthilfe bei pl&ouml;tzlichen Sehst&ouml;rungen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const services = document.querySelectorAll('.service');
+            const logoContainer = document.querySelector('.logo-container');
+            const h1 = document.querySelector('h1');
+    
+            h1.style.animationDelay = '0s';
+            h1.style.opacity = '1';
+    
+            logoContainer.style.animationDelay = '0s';
+            logoContainer.style.opacity = '1';
+            logoContainer.style.marginBottom = '30px';
+            logoContainer.style.marginTop = '35px';
+    
+            services.forEach((service, index) => {
+                service.style.animationDelay = `${(index + 1) * 0.1}s`; 
+            });
+        });
+    </script>
+    
+
+    
+
+<footer class="bg-dark text-white text-center text-lg-start mt-auto">
+    <div class="text-center p-3">
+        &copy; 2024 Sch&ouml;nesGlas - Webseite gestaltet und aufgebaut mit Hilfe des Bootstrap Frameworks
+    </div>
+</footer>
+
+</body>
+
+</html>
